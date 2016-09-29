@@ -203,7 +203,6 @@
 *cupsVersion: 1.4
 *cupsModelNumber: 0
 *cupsManualCopies: False
-*cupsFilter: "application/vnd.cups-postscript 0 /usr/lib/cups/filter/fax-pnh-filter"
 *cupsLanguages: "fr de it es ko ja ru pl pt zh_TW zh_CN"
 *NonUIConstraints: *CustomFaxNumber True *PnH Verify
 *NonUIConstraints: *PnH Verify *CustomFaxNumber True
