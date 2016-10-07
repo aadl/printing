@@ -1,0 +1,15 @@
+---
+
+- name: pull the latest aadl/cups
+  docker_image:
+    name: aadl/cups:{{cups_image_version}}
+
+- name: Start cups server
+  docker_container:
+    name: cups-server
+    image: aadl/cups
+    published_ports:
+      - {{cups_access_port}}:631/tcp
+    env:
+        CUPS_USER_ADMIN={{cups_admin_user}}
+        CUPS_USER_PASSWORD={{cups_admin_password}}
