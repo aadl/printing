@@ -4,6 +4,9 @@
   docker_image:
     name: aadl/cups:{{cups_image_version}}
 
+- name: copy cups config directory
+  synchronize: src=cups-config dest={{cups_config_directory}}
+
 - name: Start cups server
   docker_container:
     name: cups-server
@@ -13,3 +16,5 @@
     env:
         CUPS_USER_ADMIN={{cups_admin_user}}
         CUPS_USER_PASSWORD={{cups_admin_password}}
+    volumes:
+      - {{cups_config_directory}}
