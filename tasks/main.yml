@@ -2,7 +2,7 @@
 
 - name: pull the latest aadl/cups
   docker_image:
-    name: aadl/cups:{{cups_image_version}}
+    name: aadl/cups-alpine:{{cups_image_version}}
 
 - name: copy cups config directory
   synchronize: src=cups-config dest={{cups_config_directory}}
@@ -10,11 +10,11 @@
 - name: Start cups server
   docker_container:
     name: cups-server
-    image: aadl/cups
+    image: aadl/cups-alpine:{{cups_image_version}}
     published_ports:
-      - {{cups_access_port}}:631/tcp
+      - "{{ cups_access_port }}:631/tcp"
     env:
         CUPS_USER_ADMIN={{cups_admin_user}}
         CUPS_USER_PASSWORD={{cups_admin_password}}
     volumes:
-      - {{cups_config_directory}}
+      - "{{cups_config_directory}}"
