@@ -1,0 +1,20 @@
+galaxy_info:
+  author: aadl
+  description: CUPs Docker Service
+  company: Ann Arbor District Library
+  license: license (GPLv3)
+
+  min_ansible_version: 1.2
+
+  platforms:
+  - name: Ubuntu
+    versions:
+    - all
+
+  galaxy_tags:
+  - docker
+  - cups
+  - aadl
+  - printing
+
+dependencies: []
