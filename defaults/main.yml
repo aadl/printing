@@ -2,6 +2,7 @@
 
 cups_image_version: latest
 cups_config_directory: /tmp/cups-config
+cups_pdf_spool_directory: /tmp/cups-spool-pdf
 cups_access_port: 6631
 cups_admin_user: admin
 cups_admin_password: secr3t

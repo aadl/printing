@@ -5,8 +5,15 @@
     name: aadl/cups-alpine:{{cups_image_version}}
 
 - name: copy cups config directory
-  synchronize: src=cups-config dest={{cups_config_directory}}
+  synchronize: src=cups-config/ dest={{cups_config_directory}}
 
+- name: copy ppd files for each printer
+  copy:
+    src: ppds/Lexmark_XM1100_Series.ppd
+    dest: "{{ cups_config_directory }}/ppd/west-pub-1.ppd"
+- copy:
+    src: ppds/Lexmark_XM1100_Series.ppd
+    dest: "{{ cups_config_directory }}/ppd/west-pub-2.ppd"
 - name: Start cups server
   docker_container:
     name: cups-server
@@ -17,4 +24,5 @@
         CUPS_USER_ADMIN={{cups_admin_user}}
         CUPS_USER_PASSWORD={{cups_admin_password}}
     volumes:
-      - "{{cups_config_directory}}"
+      - "{{ cups_config_directory }}:/etc/cups"
+      - "{{ cups_pdf_spool_directory }}:/var/spool/cups-pdf"
