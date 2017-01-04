@@ -25,3 +25,4 @@
         CUPS_USER_PASSWORD={{cups_admin_password}}
     volumes:
       - "{{ cups_config_directory }}:/etc/cups"
+      - "{{ cups_pdf_spool_directory }}:/var/spool/cups-pdf"
