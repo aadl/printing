@@ -7,11 +7,12 @@
 - name: copy cups config directory
   synchronize: src=cups-config/ dest={{cups_config_directory}}
 
-- name: copy ppd files for each printer
+- name: copy ppd files for west-pub-1 printer
   copy:
     src: ppds/Lexmark_XM1100_Series.ppd
     dest: "{{ cups_config_directory }}/ppd/west-pub-1.ppd"
-- copy:
+- name: copy ppd file for west-pub-2 printer
+  copy:
     src: ppds/Lexmark_XM1100_Series.ppd
     dest: "{{ cups_config_directory }}/ppd/west-pub-2.ppd"
 - name: Start cups server
