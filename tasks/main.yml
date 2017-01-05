@@ -7,6 +7,18 @@
 - name: copy cups config directory
   synchronize: src=cups-config/ dest={{cups_config_directory}}
 
+- name: copy ppd file for pitts-pub-1 printer
+  copy:
+    src: ppds/Lexmark_X463de.ppd
+    dest: "{{ cups_config_directory }}/ppd/pitts-pub-1.ppd"
+- name: copy ppd file for pitts-pub-2 printer
+  copy:
+    src: ppds/Lexmark_XM1100_Series.ppd
+    dest: "{{ cups_config_directory }}/ppd/pitts-pub-2.ppd"
+- name: copy ppd file for trav-pub printer
+  copy:
+    src: ppds/Lexmark_X463de.ppd
+    dest: "{{ cups_config_directory }}/ppd/trav-pub.ppd"
 - name: copy ppd files for west-pub-1 printer
   copy:
     src: ppds/Lexmark_XM1100_Series.ppd
@@ -15,10 +27,6 @@
   copy:
     src: ppds/Lexmark_XM1100_Series.ppd
     dest: "{{ cups_config_directory }}/ppd/west-pub-2.ppd"
-- name: copy ppd file for trav-pub printer
-  copy:
-    src: ppds/Lexmark_X463de.ppd
-    dest: "{{ cups_config_directory }}/ppd/trav-pub.ppd"
 - name: Start cups server
   docker_container:
     name: cups-server
