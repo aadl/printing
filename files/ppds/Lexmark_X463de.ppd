@@ -454,7 +454,7 @@
 *RequiresPageRegion All: True
 *OpenUI *InputSlot/Media Source: PickOne
 *OrderDependency: 20.0 AnySetup *InputSlot
-*DefaultInputSlot: Tray1
+*DefaultInputSlot: Tray2
 *InputSlot Tray1/Tray 1: "
 			1 dict dup /MediaPosition null put setpagedevice 
 			currentpagedevice /InputAttributes get 0 get setpagedevice
@@ -502,7 +502,7 @@
 *OpenGroup: InstallableOptions/Installable Options
 *OpenUI *Trays: PickOne
 *OrderDependency: 0.0 AnySetup *Trays
-*DefaultTrays: Tray1
+*DefaultTrays: Tray12
 *Trays Tray1/Tray 1: ""
 *Trays Tray12/Tray 1+2: ""
 *?Trays: "
