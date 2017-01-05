@@ -7,11 +7,44 @@
 - name: copy cups config directory
   synchronize: src=cups-config/ dest={{cups_config_directory}}
 
-- name: copy ppd files for each printer
+- name: copy ppd file for downtown-pub-1 printer
+  copy:
+    src: ppds/Lexmark_XM1100_Series.ppd
+    dest: "{{ cups_config_directory }}/ppd/downtown-pub-1.ppd"
+- name: copy ppd file for downtown-pub-2 printer
+  copy:
+    src: ppds/Lexmark_X463de.ppd
+    dest: "{{ cups_config_directory }}/ppd/downtown-pub-2.ppd"
+- name: copy ppd file for downtown-pub-3 printer
+  copy:
+    src: ppds/Lexmark_X463de.ppd
+    dest: "{{ cups_config_directory }}/ppd/downtown-pub-3.ppd"
+- name: copy ppd file for mcb-pub-1 printer
+  copy:
+    src: ppds/Lexmark_XM1100_Series.ppd
+    dest: "{{ cups_config_directory }}/ppd/mcb-pub-1.ppd"
+- name: copy ppd file for mcb-pub-2 printer
+  copy:
+    src: ppds/Lexmark_XM1100_Series.ppd
+    dest: "{{ cups_config_directory }}/ppd/mcb-pub-2.ppd"
+- name: copy ppd file for pitts-pub-1 printer
+  copy:
+    src: ppds/Lexmark_X463de.ppd
+    dest: "{{ cups_config_directory }}/ppd/pitts-pub-1.ppd"
+- name: copy ppd file for pitts-pub-2 printer
+  copy:
+    src: ppds/Lexmark_XM1100_Series.ppd
+    dest: "{{ cups_config_directory }}/ppd/pitts-pub-2.ppd"
+- name: copy ppd file for trav-pub printer
+  copy:
+    src: ppds/Lexmark_X463de.ppd
+    dest: "{{ cups_config_directory }}/ppd/trav-pub.ppd"
+- name: copy ppd files for west-pub-1 printer
   copy:
     src: ppds/Lexmark_XM1100_Series.ppd
     dest: "{{ cups_config_directory }}/ppd/west-pub-1.ppd"
-- copy:
+- name: copy ppd file for west-pub-2 printer
+  copy:
     src: ppds/Lexmark_XM1100_Series.ppd
     dest: "{{ cups_config_directory }}/ppd/west-pub-2.ppd"
 - name: Start cups server
