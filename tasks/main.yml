@@ -51,6 +51,10 @@
   copy:
     src: ppds/Lexmark_XM1100_Series.ppd
     dest: "{{ cups_config_directory }}/ppd/west-pub-2.ppd"
+- name: copy ppd file for west-pub-2 printer
+  copy:
+    src: ppds/Lexmark_XM1100_Series.ppd
+    dest: "{{ cups_config_directory }}/ppd/west-staff-front.ppd"
 - name: Start cups server
   docker_container:
     name: cups-server
