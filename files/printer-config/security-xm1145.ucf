@@ -1,0 +1,409 @@
+// XM1145 Security File
+// Basic security password is in format sha256 w/ salt
+
+auth.clear
+
+auth.General.logoutDelay "30"
+auth.General.remoteLoginTimeout "10"
+auth.General.loginAttemptsBeforeLock "3"
+auth.General.loginAttemptsWindowTime "5"
+auth.General.loginAttemptsPunishmentTime "5"
+auth.General.resetAction "1"
+auth.General.minimumPinLength "4"
+auth.NTLM.promptName "NTLM Building Block"
+auth.Add "\
+	Type=FallbackPassword;\
+	name=FallbackPassword;\
+	useFallbackPassword=0;\
+	"
+auth.InternalAccount.userInput "0"
+auth.InternalAccount.requireEmailAddresses "0"
+auth.InternalAccount.promptName "Internal Accounts Building Block"
+auth.kerberos.language "1"
+auth.kerberos.promptName "Kerberos Building Block"
+auth.kerberos.disableReverseIPLookups "0"
+auth.Add "\
+	Type=Password;\
+	isAdminPassword=1;\
+	name=Basic Security Setup Password Building Block;\
+	hashPassword=sha256:HaSh;\
+	salt=MySalt;\
+	"
+auth.Add "\
+	Type=SecurityTemplate;\
+	name=Basic Security Setup Template;\
+	authentication=Basic Security Setup Password Building Block;\
+	"
+auth.Fac.SecurityMenuAtTheDevice "Basic Security Setup Template"
+auth.Fac.SecurityMenuRemotely "Basic Security Setup Template"
+auth.Fac.ServiceEngineerMenusAtTheDevice "Basic Security Setup Template"
+auth.Fac.ServiceEngineerMenuRemotely "Basic Security Setup Template"
+auth.Fac.ConfigMenu "Basic Security Setup Template"
+auth.Fac.PaperMenuAtTheDevice "Basic Security Setup Template"
+auth.Fac.PaperMenuRemotely "Basic Security Setup Template"
+auth.Fac.ReportsMenuAtTheDevice "Basic Security Setup Template"
+auth.Fac.ReportsMenuRemotely "Basic Security Setup Template"
+auth.Fac.SettingsMenuAtTheDevice "Basic Security Setup Template"
+auth.Fac.SettingsMenuRemotely "Basic Security Setup Template"
+auth.Fac.NetworkPortsMenuAtTheDevice "Basic Security Setup Template"
+auth.Fac.NetworkPortsMenuRemotely "Basic Security Setup Template"
+auth.Fac.ManageShortcutsAtTheDevice "Basic Security Setup Template"
+auth.Fac.ManageShortcutsRemotely "Basic Security Setup Template"
+auth.Fac.OptionCardConfiguration "Basic Security Setup Template"
+auth.Fac.OptionCardConfigurationRemotely "Basic Security Setup Template"
+auth.Fac.WebImportExportSettings "Basic Security Setup Template"
+auth.Fac.eSFConfiguration "Basic Security Setup Template"
+auth.Fac.RemoteManagement "Basic Security Setup Template"
+auth.Fac.FirmwareUpdates "Basic Security Setup Template"
+auth.Fac.PJLDeviceManagement "disabled"
+auth.Fac.LockOperatorPanel "Basic Security Setup Template"
+auth.Fac.ConfigurationPackageImportExport "Basic Security Setup Template"
+auth.Fac.AddressBook "disabled"
+auth.Fac.CreateProfile "disabled"
+auth.Fac.CreateBookmarksAtDevice "disabled"
+auth.Fac.CreateBookmarksRemotely "Basic Security Setup Template"
+auth.Fac.FlashDrivePrint "no security"
+auth.Fac.FlashDriveScan "no security"
+auth.Fac.CopyFunction "no security"
+auth.Fac.FlashDriveAccess "no security"
+auth.Fac.CopyColorDropout "no security"
+auth.Fac.EmailFunction "no security"
+auth.Fac.FaxFunction "disabled"
+auth.Fac.ReleaseHeldFaxes "no security"
+auth.Fac.FTPFunction "disabled"
+auth.Fac.HeldJobsAccess "disabled"
+auth.Fac.UseProfiles "disabled"
+auth.Fac.ChangeLanguageFromHomeScreen "disabled"
+auth.Fac.CancelJobsAtTheDevice "no security"
+auth.Fac.SecureIPPPrint "no security"
+auth.Fac.Solution1 "no security"
+auth.Fac.Solution2 "no security"
+auth.Fac.Solution3 "no security"
+auth.Fac.Solution4 "no security"
+auth.Fac.Solution5 "no security"
+auth.Fac.Solution6 "no security"
+auth.Fac.Solution7 "no security"
+auth.Fac.Solution8 "no security"
+auth.Fac.Solution9 "no security"
+auth.Fac.Solution10 "no security"
+auth.Fac.NewSolutions "disabled"
+auth.Add "\
+	Type=AccessControl;\
+	ESFRequired=1;\
+	accessControl=esf.ezForms.ezformsFAC;\
+	adminUserType=2;\
+	allowsNoSecurity=1;\
+	allowsProtection=1;\
+	atDevice=1;\
+	caesarLite=1;\
+	canUseESF=1;\
+	canUseNetwork=1;\
+	colorOnly=0;\
+	disablable=1;\
+	displayName=Forms and Favorites;\
+	etaskOnly=0;\
+	mfpOnly=0;\
+	securityTemplate=disabled;\
+	translationsID1=0;\
+	translationsTXT1=Forms and Favorites;\
+	translationsID2=1;\
+	translationsTXT2=Formulare auf Anforderung;\
+	translationsID3=10;\
+	translationsTXT3=주문형 양식;\
+	translationsID4=11;\
+	translationsTXT4=隨選列印;\
+	translationsID5=12;\
+	translationsTXT5=按需表单;\
+	translationsID6=13;\
+	translationsTXT6=Formulär på begäran;\
+	translationsID7=15;\
+	translationsTXT7=tilauspohjaiset lomakkeet;\
+	translationsID8=16;\
+	translationsTXT8=Formulários sob demanda;\
+	translationsID9=17;\
+	translationsTXT9=Бланки по запросу;\
+	translationsID10=18;\
+	translationsTXT10=Formuláře a oblíbené položky;\
+	translationsID11=19;\
+	translationsTXT11=Formularze na żądanie;\
+	translationsID12=2;\
+	translationsTXT12=Formulaires à la demande;\
+	translationsID13=20;\
+	translationsTXT13=Űrlapok és kedvencek;\
+	translationsID14=21;\
+	translationsTXT14=Talep Üzerine Formlar;\
+	translationsID15=22;\
+	translationsTXT15=Φόρμες και Αγαπημένα;\
+	translationsID16=4;\
+	translationsTXT16=Fomularios disponibles;\
+	translationsID17=5;\
+	translationsTXT17=Moduli su richiesta;\
+	translationsID18=6;\
+	translationsTXT18=Formularer efter behov;\
+	translationsID19=7;\
+	translationsTXT19=Skjemaer på forespørsel;\
+	translationsID20=8;\
+	translationsTXT20=Formulieren op aanvraag;\
+	translationsID21=9;\
+	translationsTXT21=オンデマンドフォーム;\
+	"
+auth.Add "\
+	Type=AccessControl;\
+	ESFRequired=1;\
+	accessControl=esf.addressBook.addressBookFAC;\
+	adminUserType=2;\
+	allowsNoSecurity=1;\
+	allowsProtection=1;\
+	atDevice=1;\
+	caesarLite=1;\
+	canUseESF=1;\
+	canUseNetwork=1;\
+	colorOnly=0;\
+	disablable=1;\
+	displayName=Address Book;\
+	etaskOnly=0;\
+	mfpOnly=0;\
+	securityTemplate=disabled;\
+	translationsID1=0;\
+	translationsTXT1=Address Book;\
+	translationsID2=1;\
+	translationsTXT2=Adressbuch;\
+	translationsID3=10;\
+	translationsTXT3=주소록;\
+	translationsID4=11;\
+	translationsTXT4=通訊錄;\
+	translationsID5=12;\
+	translationsTXT5=通讯簿;\
+	translationsID6=13;\
+	translationsTXT6=Adressbok;\
+	translationsID7=15;\
+	translationsTXT7=Osoitteisto;\
+	translationsID8=16;\
+	translationsTXT8=Catálogo de endereços;\
+	translationsID9=17;\
+	translationsTXT9=Телефонный справочник;\
+	translationsID10=18;\
+	translationsTXT10=Adresář;\
+	translationsID11=19;\
+	translationsTXT11=Książka adresowa;\
+	translationsID12=2;\
+	translationsTXT12=Carnet d'adresses;\
+	translationsID13=20;\
+	translationsTXT13=Címjegyzék;\
+	translationsID14=21;\
+	translationsTXT14=Telefon Defteri;\
+	translationsID15=22;\
+	translationsTXT15=Βιβλίο διευθύνσεων;\
+	translationsID16=4;\
+	translationsTXT16=Libreta de direcciones;\
+	translationsID17=5;\
+	translationsTXT17=Rubrica Indirizzi;\
+	translationsID18=6;\
+	translationsTXT18=Adressekartotek;\
+	translationsID19=7;\
+	translationsTXT19=Adressebok;\
+	translationsID20=8;\
+	translationsTXT20=Adresboek;\
+	translationsID21=9;\
+	translationsTXT21=アドレス帳;\
+	"
+auth.Add "\
+	Type=AccessControl;\
+	ESFRequired=1;\
+	accessControl=esf.myShortcut.myShortcutsFac;\
+	adminUserType=2;\
+	allowsNoSecurity=1;\
+	allowsProtection=1;\
+	atDevice=1;\
+	caesarLite=1;\
+	canUseESF=1;\
+	canUseNetwork=1;\
+	colorOnly=0;\
+	disablable=1;\
+	displayName=MyShortcut;\
+	etaskOnly=0;\
+	mfpOnly=0;\
+	securityTemplate=disabled;\
+	translationsID1=0;\
+	translationsTXT1=MyShortcut;\
+	"
+auth.Add "\
+	Type=AccessControl;\
+	ESFRequired=1;\
+	accessControl=esf.customersupport-SFP.customerSupportFAC;\
+	adminUserType=2;\
+	allowsNoSecurity=1;\
+	allowsProtection=1;\
+	atDevice=1;\
+	caesarLite=1;\
+	canUseESF=1;\
+	canUseNetwork=1;\
+	colorOnly=0;\
+	disablable=1;\
+	displayName=Customer Support;\
+	etaskOnly=0;\
+	mfpOnly=0;\
+	securityTemplate=disabled;\
+	translationsID1=0;\
+	translationsTXT1=Customer Support;\
+	translationsID2=1;\
+	translationsTXT2=Kundendienst;\
+	translationsID3=10;\
+	translationsTXT3=고객 지원;\
+	translationsID4=11;\
+	translationsTXT4=客戶支援;\
+	translationsID5=12;\
+	translationsTXT5=客户支持;\
+	translationsID6=13;\
+	translationsTXT6=Kundsupport;\
+	translationsID7=15;\
+	translationsTXT7=Asiakastuki;\
+	translationsID8=16;\
+	translationsTXT8=Suporte técnico;\
+	translationsID9=17;\
+	translationsTXT9=Поддержка пользователей;\
+	translationsID10=18;\
+	translationsTXT10=Zákaznická podpora;\
+	translationsID11=19;\
+	translationsTXT11=Obsługa klienta;\
+	translationsID12=2;\
+	translationsTXT12=Assistance clientèle;\
+	translationsID13=20;\
+	translationsTXT13=Ügyfélszolgálat;\
+	translationsID14=21;\
+	translationsTXT14=Müşteri Desteği;\
+	translationsID15=22;\
+	translationsTXT15=Εξυπηρέτηση πελατών;\
+	translationsID16=4;\
+	translationsTXT16=Servicio de atención al cliente;\
+	translationsID17=5;\
+	translationsTXT17=Assistenza clienti;\
+	translationsID18=6;\
+	translationsTXT18=Kundeservice;\
+	translationsID19=7;\
+	translationsTXT19=Brukerstøtte;\
+	translationsID20=8;\
+	translationsTXT20=Klantenondersteuning;\
+	translationsID21=9;\
+	translationsTXT21=カスタマサポート;\
+	"
+auth.Add "\
+	Type=AccessControl;\
+	ESFRequired=1;\
+	accessControl=esf.cardCopy.cardCopyFAC;\
+	adminUserType=2;\
+	allowsNoSecurity=1;\
+	allowsProtection=1;\
+	atDevice=1;\
+	caesarLite=1;\
+	canUseESF=1;\
+	canUseNetwork=1;\
+	colorOnly=0;\
+	disablable=1;\
+	displayName=Card Copy;\
+	etaskOnly=0;\
+	mfpOnly=0;\
+	securityTemplate=disabled;\
+	translationsID1=0;\
+	translationsTXT1=Card Copy;\
+	translationsID2=1;\
+	translationsTXT2=Karte kopieren;\
+	translationsID3=10;\
+	translationsTXT3=카드 복사;\
+	translationsID4=11;\
+	translationsTXT4=卡片複印;\
+	translationsID5=12;\
+	translationsTXT5=卡片复印;\
+	translationsID6=13;\
+	translationsTXT6=Kortkopia;\
+	translationsID7=15;\
+	translationsTXT7=Kortin kopiointi;\
+	translationsID8=16;\
+	translationsTXT8=Cópia do cartão;\
+	translationsID9=17;\
+	translationsTXT9=Копия карточки;\
+	translationsID10=18;\
+	translationsTXT10=Kopírovat kartu;\
+	translationsID11=19;\
+	translationsTXT11=Kopiowanie karty;\
+	translationsID12=2;\
+	translationsTXT12=Copie de carte;\
+	translationsID13=20;\
+	translationsTXT13=Kártyamásolás;\
+	translationsID14=21;\
+	translationsTXT14=Kart Kopyası;\
+	translationsID15=22;\
+	translationsTXT15=Αντιγραφή ταυτότητας;\
+	translationsID16=4;\
+	translationsTXT16=Copia de tarjetas;\
+	translationsID17=5;\
+	translationsTXT17=Copia doc. identità;\
+	translationsID18=6;\
+	translationsTXT18=Kopiering af kort;\
+	translationsID19=7;\
+	translationsTXT19=Kortkopi;\
+	translationsID20=8;\
+	translationsTXT20=Kopie van kaart;\
+	translationsID21=9;\
+	translationsTXT21=カードのコピー;\
+	"
+auth.Add "\
+	Type=AccessControl;\
+	ESFRequired=1;\
+	accessControl=esf.scanToNet.scanToNetworkFAC;\
+	adminUserType=2;\
+	allowsNoSecurity=1;\
+	allowsProtection=1;\
+	atDevice=1;\
+	caesarLite=1;\
+	canUseESF=1;\
+	canUseNetwork=1;\
+	colorOnly=0;\
+	disablable=1;\
+	displayName=Scan to Network;\
+	etaskOnly=0;\
+	mfpOnly=0;\
+	securityTemplate=disabled;\
+	translationsID1=0;\
+	translationsTXT1=Scan to Network;\
+	translationsID2=1;\
+	translationsTXT2=Scannen ins Netzwerk;\
+	translationsID3=10;\
+	translationsTXT3=네트워크로 스캔;\
+	translationsID4=11;\
+	translationsTXT4=掃描至網路;\
+	translationsID5=12;\
+	translationsTXT5=扫描到网络;\
+	translationsID6=13;\
+	translationsTXT6=Skanna till nätverk;\
+	translationsID7=15;\
+	translationsTXT7=Skannaa verkkoon;\
+	translationsID8=16;\
+	translationsTXT8=Digitalizar para rede;\
+	translationsID9=17;\
+	translationsTXT9=Сканирование в сеть;\
+	translationsID10=18;\
+	translationsTXT10=Skenovat do sítě;\
+	translationsID11=19;\
+	translationsTXT11=Skanowanie z wysyłaniem do sieci;\
+	translationsID12=2;\
+	translationsTXT12=Numérisation vers un dossier réseau;\
+	translationsID13=20;\
+	translationsTXT13=Beolvasás hálózatra;\
+	translationsID14=21;\
+	translationsTXT14=Ağa Tara;\
+	translationsID15=22;\
+	translationsTXT15=Σάρωση σε δίκτυο;\
+	translationsID16=4;\
+	translationsTXT16=Digitalizar a red;\
+	translationsID17=5;\
+	translationsTXT17=Scansione in rete;\
+	translationsID18=6;\
+	translationsTXT18=Scan til netværk ;\
+	translationsID19=7;\
+	translationsTXT19=Skanne til nettverk;\
+	translationsID20=8;\
+	translationsTXT20=Naar netwerk scannen;\
+	translationsID21=9;\
+	translationsTXT21=ネットワークへのスキャン;\
+	"
