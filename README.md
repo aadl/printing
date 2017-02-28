@@ -19,7 +19,7 @@ Airprint and other patron services are provided as possible.
 | Downtown      | 3rd Fiche     | 10.0.40.105      | X463de    |  |
 | Malletts      | Near Lab      | 10.10.0.24      | XM1145    | ✅ |
 | Malletts      | Near Bathrooms| 10.10.0.25      | XM1145    | ✅ |
-| Pittsfield    | Near Desk     | 10.10.0.26      | X463de    | ✅ |
+| Pittsfield    | Near Desk     | 10.10.0.26      | X463de    |  |
 | Pittsfield    | Near Lab      | 10.10.0.27      | XM1145    | ✅ |
 | Traverwood    | Near Lab      | 10.10.0.28      | X463de    | ✅ |
 | Westgate      | 1 (by lab)   | 10.10.0.30      | XM1145    | ✅ |
