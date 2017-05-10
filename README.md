@@ -15,6 +15,7 @@ Airprint and other patron services are provided as possible.
 | Location      | Printer       | IP              | Model     | Airprint |
 | ------------- | ------------- | --------------- | --------- | -------- |
 | Downtown      | 1st Bathrooms | 10.0.33.103     | XM1145    |  |
+| Downtown      | 1st Youth     | 192.168.100.41  | HP4250    |  |
 | Downtown      | 2nd Per       | 192.168.100.32  | HP4250    |  |
 | Downtown      | 2nd Reference | 10.0.33.9       | X463de    |  |
 | Downtown      | 3rd Fiche     | 10.0.40.105     | X463de    |  |
