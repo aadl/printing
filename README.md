@@ -23,7 +23,7 @@ Airprint and other patron services are provided as possible.
 | Malletts      | Near Bathrooms| 10.10.0.25      | XM1145    | ✅ | ✅ |
 | Pittsfield    | Near Desk     | 10.10.0.26      | MX511dhe  | ✅ | ✅ |
 | Pittsfield    | Near Lab      | 10.10.0.27      | MX511dhe  | ✅ |   |
-| Traverwood    | Near Lab      | 10.10.0.28      | X463de    | ✅ |   |
-| Traverwood    | Near Bathrooms| 10.10.0.29      | X463de    | ✅ | ✅ |
+| Traverwood    | Near Lab      | 10.10.0.28      | MX511dhe  | ✅ |   |
+| Traverwood    | Near Bathrooms| 10.10.0.29      | MX511dhe  | ✅ | ✅ |
 | Westgate      | 1 (by lab)    | 10.10.0.30      | XM1145    | ✅ | ✅ |
 | Westgate      | 2 (by lab)    | 10.10.0.31      | XM1145    | ✅ | ✅ |
