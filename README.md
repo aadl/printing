@@ -14,11 +14,11 @@ Airprint and other patron services are provided as possible.
 
 | Location      | Printer       | IP              | Model     | Airprint | Fax |
 | ------------- | ------------- | --------------- | --------- | -------- | --- |
-| Downtown      | 1st Bathrooms | 10.0.33.103     | XM1145    |  |   |
+| Downtown      | 1st Bathrooms | 10.10.0.32      | XM1145    |  |   |
 | Downtown      | 1st Youth     | 192.168.100.41  | HP4250    |  |   |
-| Downtown      | 2nd Per       | 192.168.100.32  | HP4250    |  |   |
-| Downtown      | 2nd Reference | 10.0.33.9       | X463de    |  |   |
-| Downtown      | 3rd Fiche     | 10.0.40.105     | X463de    |  |   |
+| Downtown      | 2nd Per       | 10.10.0.33      | XM1145    |  |   |
+| Downtown      | 2nd Reference | 10.10.0.34      | X463de    |  |   |
+| Downtown      | 3rd Fiche     | 10.10.0.35      | X463de    |  |   |
 | Malletts      | Near Lab      | 10.10.0.24      | XM1145    | ✅ |   |
 | Malletts      | Near Bathrooms| 10.10.0.25      | XM1145    | ✅ | ✅ |
 | Pittsfield    | Near Desk     | 10.10.0.26      | MX511dhe  | ✅ | ✅ |
