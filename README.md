@@ -17,6 +17,8 @@ Airprint and other patron services such as fax are provided as possible.
 | Downtown      | 1st Bathrooms | 10.10.0.32      | X463de |  |   |
 | Downtown      | 1st Youth     | 192.168.100.41  | HP4250    |  |   |
 | Downtown      | 2nd Per       | 10.10.0.33      | XM1145    |  |   |
+| Downtown      | 2nd Lab 1     | 10.10.0.36      | MX511dh   |  |   |
+| Downtown      | 2nd Lab 2     | 10.10.0.37      | MX511dh   |  |   |
 | Downtown      | 2nd Reference | 10.10.0.34      | X463de    |  |   |
 | Downtown      | 3rd Fiche     | 10.10.0.35      | X463de    |  |   |
 | Malletts      | Near Lab      | 10.10.0.24      | XM1145    | ✅ |   |
