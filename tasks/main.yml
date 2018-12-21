@@ -27,6 +27,10 @@
   copy:
     src: ppds/Lexmark_XM1100_Series.ppd
     dest: "{{ cups_config_directory }}/ppd/mcb-pub-2.ppd"
+- name: copy ppd file for mcb-staff printer
+  copy:
+    src: ppds/Lexmark_XM1100_Series.ppd
+    dest: "{{ cups_config_directory }}/ppd/mcb-staff.ppd"
 - name: copy ppd file for pitts-pub-1 printer
   copy:
     src: ppds/Lexmark_MX510_Series.ppd
