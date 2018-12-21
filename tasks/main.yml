@@ -7,10 +7,6 @@
 - name: copy cups config directory
   synchronize: src=cups-config/ dest={{cups_config_directory}}
 
-- name: copy ppd file for downtown-per printer
-  copy:
-    src: ppds/hp-4250-pcl.ppd
-    dest: "{{ cups_config_directory }}/ppd/downtown-per.ppd"
 - name: copy ppd file for downtown-pub-1 printer
   copy:
     src: ppds/Lexmark_XM1100_Series.ppd
