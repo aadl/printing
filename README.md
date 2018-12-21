@@ -14,16 +14,16 @@ Airprint and other patron services such as fax are provided as possible.
 
 | Location      | Printer       | IP              | Model     | Airprint | Fax |
 | ------------- | ------------- | --------------- | --------- | -------- | --- |
-| Downtown      | 1st Youth     | 192.168.100.41  | HP4250    |  |   |
+| Downtown      | 1st Youth     | 192.168.100.41  | HP4250    | :x: | :x:  |
 | Downtown      | 2nd Lab 1     | 10.10.0.36      | MX511dh   | ✅ | ✅ |
-| Downtown      | 2nd Lab 2     | 10.10.0.37      | MX511dh   | ✅ |   |
-| Downtown      | 2nd Reference | 10.10.0.34      | X463de    |  |   |
-| Downtown      | 3rd Fiche     | 10.10.0.35      | X463de    |  |   |
-| Malletts      | Near Lab      | 10.10.0.24      | XM1145    | ✅ |   |
+| Downtown      | 2nd Lab 2     | 10.10.0.37      | MX511dh   | ✅ | :x:  |
+| Downtown      | 2nd Reference | 10.10.0.34      | X463de    | ✅ | :x:  |
+| Downtown      | 3rd Fiche     | 10.10.0.35      | X463de    | ✅ | :x:  |
+| Malletts      | Near Lab      | 10.10.0.24      | XM1145    | ✅ | :x:  |
 | Malletts      | Near Bathrooms| 10.10.0.25      | XM1145    | ✅ | ✅ |
 | Pittsfield    | Near Desk     | 10.10.0.26      | MX511dhe  | ✅ | ✅ |
-| Pittsfield    | Near Lab      | 10.10.0.27      | MX511dhe  | ✅ |   |
-| Traverwood    | Near Lab      | 10.10.0.28      | MX511dhe  | ✅ |   |
+| Pittsfield    | Near Lab      | 10.10.0.27      | MX511dhe  | ✅ | :x:  |
+| Traverwood    | Near Lab      | 10.10.0.28      | MX511dhe  | ✅ | :x:  |
 | Traverwood    | Near Bathrooms| 10.10.0.29      | MX511dhe  | ✅ | ✅ |
 | Westgate      | 1 (by lab)    | 10.10.0.30      | XM1145    | ✅ | ✅ |
 | Westgate      | 2 (by lab)    | 10.10.0.31      | XM1145    | ✅ | ✅ |
