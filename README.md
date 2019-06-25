@@ -14,7 +14,7 @@ Airprint and other patron services such as fax are provided as possible.
 
 | Location      | Printer       | IP              | Model     | Airprint | Fax |
 | ------------- | ------------- | --------------- | --------- | -------- | --- |
-| Downtown      | 1st Youth     | 192.168.100.41  | HP4250    | :x: | :x:  |
+| Downtown      | 1st Youth     | 10.10.0.32      | B2238     | :heavy_check_mark: | :x:  |
 | Downtown      | 2nd Lab 1     | 10.10.0.36      | MX511dh   | :heavy_check_mark: | :heavy_check_mark: |
 | Downtown      | 2nd Lab 2     | 10.10.0.37      | MX511dh   | :heavy_check_mark: | :x:  |
 | Downtown      | 2nd Reference | 10.10.0.34      | X463de    | :heavy_check_mark: | :x:  |
