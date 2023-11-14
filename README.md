@@ -21,8 +21,8 @@ Airprint and other patron services such as fax are provided as possible.
 | Downtown      | 2nd Fiche     | 10.10.0.35      | X463de    | :heavy_check_mark: | :x:  |
 | Malletts      | Lab 1         | 10.10.0.24      | MX522adhe | :heavy_check_mark: | :heavy_check_mark: |
 | Malletts      | Lab 2         | 10.10.0.25      | MX522adhe | :heavy_check_mark: | :heavy_check_mark: |
-| Pittsfield    | Near Desk     | 10.10.0.26      | MX511dhe  | :heavy_check_mark: | :heavy_check_mark: |
-| Pittsfield    | Near Lab      | 10.10.0.27      | MX511dhe  | :heavy_check_mark: | :x:  |
+| Pittsfield    | Lab 2     | 10.10.0.26      | MX511dhe  | :heavy_check_mark: | :heavy_check_mark: |
+| Pittsfield    | Lab 1      | 10.10.0.27      | MX511dhe  | :heavy_check_mark: | :heavy_check_mark:  |
 | Traverwood    | Near Lab      | 10.10.0.28      | MX511dhe  | :heavy_check_mark: | :x:  |
 | Traverwood    | Near Bathrooms| 10.10.0.29      | MX511dhe  | :heavy_check_mark: | :heavy_check_mark: |
 | Westgate      | 1 (by lab)    | 10.10.0.30      | XM1145    | :heavy_check_mark: | :heavy_check_mark: |
