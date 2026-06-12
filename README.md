@@ -16,8 +16,8 @@ Airprint and other patron services such as fax are provided as possible.
 | ------------- | ------------- | --------------- | --------- | -------- | --- |
 | Downtown      | 1st Youth     | 10.10.0.32      | B2238     | :heavy_check_mark: | :x:  |
 | Downtown      | 2nd Lab 1     | 10.10.0.36      | MX532adwe | :x: | :heavy_check_mark: |
-| Downtown      | 2nd Lab 2     | 10.10.0.37      | MX532adwe  | :x: | :heavy_check_mark: |
-| Downtown      | 2nd Nonfiction| 10.10.0.34      | MX532adwe | :heavy_check_mark: | :x:  |
+| Downtown      | 2nd Lab 2     | 10.10.0.37      | MX532adwe | :x: | :heavy_check_mark: |
+| Downtown      | 2nd Fiction   | 10.10.0.34      | MX532adwe | :heavy_check_mark: | :x:  |
 | Downtown      | 2nd Fiche     | 10.10.0.35      | XM1342    | :x: | :x:  |
 | Malletts      | Lab 1         | 10.10.0.24      | MX522adhe | :x: | :heavy_check_mark: |
 | Malletts      | Lab 2         | 10.10.0.25      | MX522adhe | :x: | :heavy_check_mark: |
